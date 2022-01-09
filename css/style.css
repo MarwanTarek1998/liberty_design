@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: black !important;
+}
+
+/* poster */
+
+/* poster */
+
+/* nav bar */
+.nav-item{
+    position: relative !important;
+    font-weight: 700;
+}
+
+.nav-item::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    height: 1px;
+    transition: .3s;
+}
+
+.nav-item:hover:after{
+    width: 100%;
+}
+
+
+@media (min-width: 769px) {
+    .nav-item{
+        margin: 0 10px !important;
+    }
+    .dropdown-menu{
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    .dropdown-menu::-webkit-scrollbar{
+        background:#fff; 
+        /* border-radius: 10px; */
+    }
+    
+    .dropdown-menu::-webkit-scrollbar-thumb{
+    background-color: #dc3545;
+          border: 5px solid white;
+          border-radius: 10px;
+          background-clip: content-box;
+    }
+
+    .navbar-expand-lg .navbar-collapse{
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav{
+        flex-direction: row !important;
+    }
+    .navbar-expand-lg .navbar-toggler{display: none;}
+}
+@media (max-width : 768px) {
+
+    nav{
+        background-image: url(../imgs/bg_wood.jpeg) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+}
+
+/* nav bar */
+
+/* cards */
+.btn-card{
+    bottom: 15px;
+    left: 20px;
+    width: 90%;
+}
+/* cards */
+
+/*Supplies*/
+
+.title{
+    background-color: rgba(255, 230, 192, 1) !important;
+}
+/*Supplies*/
